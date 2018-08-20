@@ -1,5 +1,5 @@
 {
-  "name": "generat-wallet",
+  "name": "wormhole1",
   "version": "1.0.0",
   "description": "Testing and playing with Bitbox and Wormhold SDKs",
   "author": "Chris Troutner",
@@ -19,5 +19,8 @@
   "homepage": "https://github.com/christroutner/bch-tests#readme",
   "devDependencies": {
     "bitbox-cli": "1.5.1"
+  },
+  "dependencies": {
+    "wormholecash": "^0.2.4"
   }
 }
