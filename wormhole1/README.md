@@ -1,2 +1,3 @@
-# bch-tests
-Examples and tests I wrote to play with the Bitbox and Wormhole BCH SDKs.
+# wormhole1
+
+Calls a basic info() call.
