@@ -1,4 +1,6 @@
 .remote-sync.json
 node_modules
 config.js
+wallet-info.txt
+start-server
 
