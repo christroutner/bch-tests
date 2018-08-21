@@ -21,7 +21,8 @@
     "bitbox-cli": "1.5.1"
   },
   "dependencies": {
-    "gyp": "^0.5.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2",
     "wormholecash": "^0.2.4"
   }
 }
