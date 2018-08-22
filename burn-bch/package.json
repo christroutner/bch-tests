@@ -1,0 +1,28 @@
+{
+  "name": "wormhole1",
+  "version": "1.0.0",
+  "description": "Testing and playing with Bitbox and Wormhold SDKs",
+  "author": "Chris Troutner",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "ls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christroutner/bch-tests.git"
+  },
+  "bugs": {
+    "url": "https://github.com/christroutner/bch-tests/issues"
+  },
+  "homepage": "https://github.com/christroutner/bch-tests#readme",
+  "devDependencies": {
+    "bitbox-cli": "1.5.1"
+  },
+  "dependencies": {
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2",
+    "wormholecash": "^0.2.4"
+  }
+}
