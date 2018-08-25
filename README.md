@@ -15,3 +15,7 @@ order the are presented in the tutorial:
 - `generate-wh-addr` - Generate a new public address in your Wormhole wallet.
 - `burn-bch` - Burn a BCH coin to generate 100 WHC tokens.
 - `token-balance` - Check the balance of tokens associated with an address.
+- `create-managed-token` - Create a new 'managed' token.
+- `token-info-from-tx` - Get token info (propertyId) from the tx returned by `create-managed-token`
+- `token-info-from-propertyid` - Get additional token info from the propertyId assigned to a token.
+- `issue-new-tokens` - Issue new tokens to a BCH address.
