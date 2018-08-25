@@ -19,7 +19,7 @@ order the are presented in the tutorial:
 - `generate-wh-addr` - Generate a new public address in your Wormhole wallet.
   Send test BCH to this address using [a faucet](https://testnet.manu.backend.hamburg/bitcoin-cash-faucet).
   You'll need to wait for 6? confirmations before continuing.
-- `burn-bch` - Burn a BCH coin to generate 100 WHC tokens. (not working)
+- `burn-bch` - Burn a BCH coin to generate 100 WHC tokens.
 - `token-balance` - Check the balance of tokens associated with an address.
 - `create-managed-token` - Create a new 'managed' token.
 - `token-info-from-tx` - Get token info (propertyId) from the tx returned by `create-managed-token`

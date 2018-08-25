@@ -1,16 +1,9 @@
-const config = require("./config.js");
-
-let BITBOXCli = require("bitbox-cli/lib/bitbox-cli").default;
-let BITBOX = new BITBOXCli(config);
-const fs = require("fs");
+const config = require("../config.js");
 
 let Wormhole = require("wormholecash/lib/Wormhole").default;
 let wormhole = new Wormhole(config);
 
-const rp = require("request-promise");
-
-const BCH_ADDR1 = `bchtest:qq26vgef48hg26e666qtkvthjsmt4z6phyw5mgltlr`;
-const TXID = `86c868c8e312d849d1cf1b10236353ed3513cc669c761d1c5a208d6f5c3cfb84`;
+const TXID = `1faf0e19d2ce15734d5b6f4648c26bdc50dde9bdcd9156e4b6e2a48b015281c0`;
 
 async function getTxInfo() {
   const retVal = await wormhole.DataRetrieval.transaction(TXID);
