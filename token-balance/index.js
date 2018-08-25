@@ -1,13 +1,7 @@
-const config = require("./config.js");
-
-let BITBOXCli = require("bitbox-cli/lib/bitbox-cli").default;
-let BITBOX = new BITBOXCli(config);
-const fs = require("fs");
+const config = require("../config.js");
 
 let Wormhole = require("wormholecash/lib/Wormhole").default;
 let wormhole = new Wormhole(config);
-
-const rp = require("request-promise");
 
 const BCH_ADDR1 = `bchtest:qq26vgef48hg26e666qtkvthjsmt4z6phyw5mgltlr`;
 
