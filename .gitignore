@@ -4,3 +4,5 @@ config.js
 wallet-info.txt
 start-server
 bch-test-address.txt
+tx-info.txt
+

@@ -15,7 +15,7 @@ async function createManagedToken() {
     0, // 0 for new tokens
     "category",
     "subcategory",
-    "T01", // 'Ticker symbol' (kind of)
+    "T04", // 'Ticker symbol' (kind of)
     "p2pvps.org",
     "Test Description"
   );

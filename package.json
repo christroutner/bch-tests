@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/christroutner/bch-tests#readme",
   "dependencies": {
-    "wormholecash": "^0.4.2"
+    "wormholecash": "^0.3.2"
   }
 }

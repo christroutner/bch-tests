@@ -16,9 +16,5 @@
   "bugs": {
     "url": "https://github.com/christroutner/bch-tests/issues"
   },
-  "homepage": "https://github.com/christroutner/bch-tests#readme",
-  "devDependencies": {},
-  "dependencies": {
-    "wormholecash": "0.2.4"
-  }
+  "homepage": "https://github.com/christroutner/bch-tests#readme"
 }
