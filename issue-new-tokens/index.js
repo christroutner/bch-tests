@@ -1,3 +1,11 @@
+/*
+  BCH_ISSUER_ADDR is either the address with the ability to issue new tokens or
+  the address that posseses tokens and can send them.
+
+  It takes at least 1 confirmation before transaction will show up with
+  token-info-from-propertyid or token-balance.
+*/
+
 const config = require("./config.js");
 
 let BITBOXCli = require("bitbox-cli/lib/bitbox-cli").default;

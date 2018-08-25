@@ -3,6 +3,10 @@
 This repository contains simple node.js apps for exercising the Wormhole SDK
 endpoints discussed in this
 [Wormhole Tutorial pt 3](https://developer.bitcoin.com/tutorials/wormhole-3-tokens.html).
+Before being able to use the code in this repository, you need to follow the steps
+in [part 1](https://developer.bitcoin.com/tutorials/wormhole-1-setup.html)
+and [part 2](https://developer.bitcoin.com/tutorials/wormhole-2-full-node.html)
+to set up your own Wormhole-enabled Bitcoin Cash full node.
 
 - Each app can be installed with `npm install`
 - Each app can be executed with `npm start`
