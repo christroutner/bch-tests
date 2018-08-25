@@ -1,0 +1,19 @@
+BIP44 $BCH Wallet
+
+256 bit english BIP32 Mnemonic:
+pact whisper custom vintage busy dolphin lumber pretty bottom motion alcohol innocent affair view bulb wheel rude load someone crazy hire trim surprise wing
+
+BIP44 Account: "m/44'/145'/0'"
+m/44'/145'/0'/0/0: bchtest:qzgjlerm2sfgpg562w2t6vm02tvdf3vpjvcea7nvrx
+m/44'/145'/0'/0/1: bchtest:qr7t0hkwc3xnfnakfngh23nxkmg9vwvcfyukf70cdz
+m/44'/145'/0'/0/2: bchtest:qzc0l2gyjqyls36daj5fhfq8qnt279rdmy9fqpkw2s
+m/44'/145'/0'/0/3: bchtest:qzln37tv8qkxpz7ncw62qn84tk0r3mxshgc8trw0ax
+m/44'/145'/0'/0/4: bchtest:qrjzpvcqrtmaqxujhnuau88f7c5fkafzcyvdv7fx7m
+m/44'/145'/0'/0/5: bchtest:qq7ktxfa2g9hwe25nd7p0l99qpv4xeacsuwvljsgzr
+m/44'/145'/0'/0/6: bchtest:qq4n9xssk282797s5stqegmqdxhe9jf0zy6f559n5x
+m/44'/145'/0'/0/7: bchtest:qz4u9px4v2k827j3x28jn2up3vd4fvk7ky9trfya5h
+m/44'/145'/0'/0/8: bchtest:qqv7w4ah4d5psyxr4hx42kxslv0q027cdqvsca8mnz
+m/44'/145'/0'/0/9: bchtest:qqmjnecthlcavkprn62a90x4cu7xd6c50qrudpek7h
+
+
+
