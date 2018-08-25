@@ -1,5 +1,5 @@
 {
-  "name": "wormhole1",
+  "name": "bch-tests",
   "version": "1.0.0",
   "description": "Testing and playing with Bitbox and Wormhold SDKs",
   "author": "Chris Troutner",
@@ -17,11 +17,8 @@
     "url": "https://github.com/christroutner/bch-tests/issues"
   },
   "homepage": "https://github.com/christroutner/bch-tests#readme",
-  "devDependencies": {
-    "bitbox-cli": "1.5.1"
-  },
   "dependencies": {
-    "gyp": "^0.5.0",
-    "wormholecash": "^0.2.4"
+    "bitbox-cli": "^1.6.0",
+    "wormholecash": "^0.4.2"
   }
 }

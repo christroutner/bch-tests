@@ -8,8 +8,8 @@ in [part 1](https://developer.bitcoin.com/tutorials/wormhole-1-setup.html)
 and [part 2](https://developer.bitcoin.com/tutorials/wormhole-2-full-node.html)
 to set up your own Wormhole-enabled Bitcoin Cash full node.
 
-- Each app can be installed with `npm install`
-- Each app can be executed with `npm start`
+- Install dependencies by running `npm install`
+- Each app can be executed by entering its directory and executing it with `npm start`
 
 These programs use my own hard-coded addresses. Replace them with your own BCH
 test-net addresses. If you are following along in the tutorial, this is the
