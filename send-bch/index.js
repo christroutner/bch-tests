@@ -13,9 +13,11 @@ let BITBOX = new BITBOXCli({ restURL: "https://trest.bitcoin.com/v1/" });
 const lib = require('../../token-liquidity/lib/util.js');
 
 const SEND_MNEMONIC = `pact whisper custom vintage busy dolphin lumber pretty bottom motion alcohol innocent affair view bulb wheel rude load someone crazy hire trim surprise wing`;
-const SEND_ADDR = `bchtest:qzgjlerm2sfgpg562w2t6vm02tvdf3vpjvcea7nvrx`;
+const SEND_ADDR = `bchtest:qr7t0hkwc3xnfnakfngh23nxkmg9vwvcfyukf70cdz`;
 
-const RECV_ADDR = `bchtest:qr7t0hkwc3xnfnakfngh23nxkmg9vwvcfyukf70cdz`;
+
+//const SEND_MNEMONIC = `empty rail board left bonus dinner laundry fetch tortoise shell pyramid awesome alley much float ugly essence asthma aerobic tourist notice mixture anxiety chaos`;
+const RECV_ADDR = `bchtest:qrcyfng2qqm5nz98xzxlnztt9aguhf3twqq5l8ar5j`;
 
 async function sendBch() {
   const balance = await lib.getBCHBalance(SEND_ADDR, false);
@@ -37,12 +39,12 @@ async function sendBch() {
   const utxo = await BITBOX.Address.utxo(SEND_ADDR);
   console.log(`utxo: ${JSON.stringify(utxo,null,2)}`);
 
-  process.exit(0);
+  //process.exit(0);
 
   // instance of transaction builder
   let transactionBuilder = new BITBOX.TransactionBuilder("testnet");
 
-  //const satoshisToSend = 1000;
+  const satoshisToSend = 1000;
   let originalAmount = utxo[0].satoshis;
   const vout = utxo[0].vout;
   const txid = utxo[0].txid;
@@ -51,16 +53,19 @@ async function sendBch() {
   transactionBuilder.addInput(txid, vout);
 
   // get byte count to calculate fee. paying 1 sat/byte
-  let byteCount = BITBOX.BitcoinCash.getByteCount({ P2PKH: 1 }, { P2PKH: 1 });
-  const satoshisPerByte = 1;
+  let byteCount = BITBOX.BitcoinCash.getByteCount({ P2PKH: 1 }, { P2PKH: 2 });
+  console.log(`byteCount: ${byteCount}`);
+  const satoshisPerByte = 1.2;
+  const txFee = Math.floor(satoshisPerByte*byteCount);
+  console.log(`txFee: ${txFee}`);
 
   // amount to send back to the sending address. It's the original amount - 1 sat/byte for tx size
-  let remainder = originalAmount - satoshisPerByte*byteCount;
+  let remainder = originalAmount - satoshisToSend - txFee;
 
   // add output w/ address and amount to send
-  //transactionBuilder.addOutput(RECV_ADDR, satoshisToSend);
-  //transactionBuilder.addOutput(SEND_ADDR, remainder);
-  transactionBuilder.addOutput(RECV_ADDR_LEGACY, remainder);
+  transactionBuilder.addOutput(RECV_ADDR_LEGACY, satoshisToSend);
+  transactionBuilder.addOutput(SEND_ADDR_LEGACY, remainder);
+  //transactionBuilder.addOutput(RECV_ADDR_LEGACY, remainder);
 
   // Generate a change address from a Mnemonic of a private key.
   const change = changeAddrFromMnemonic(SEND_MNEMONIC);
@@ -98,7 +103,7 @@ function changeAddrFromMnemonic(mnemonic) {
   let account = BITBOX.HDNode.derivePath(masterHDNode, "m/44'/145'/0'");
 
   // derive the first external change address HDNode which is going to spend utxo
-  let change = BITBOX.HDNode.derivePath(account, "0/0");
+  let change = BITBOX.HDNode.derivePath(account, "0/1");
 
   return change;
 }
