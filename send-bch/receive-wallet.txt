@@ -1,19 +1,19 @@
 BIP44 $BCH Wallet
 
 256 bit english BIP32 Mnemonic:
-hobby hand crazy discover correct solve ticket lumber scorpion ranch letter pull wood isolate rural beach excite cruel sort mosquito bid burst waste enjoy
+empty rail board left bonus dinner laundry fetch tortoise shell pyramid awesome alley much float ugly essence asthma aerobic tourist notice mixture anxiety chaos
 
 BIP44 Account: "m/44'/145'/0'"
-m/44'/145'/0'/0/0: bchtest:qzjwc0musf8vqp4nuau2t6fl099x6dgh2uspatyjvj
-m/44'/145'/0'/0/1: bchtest:qz70rw3vl2km63n0tgtaha7z8xaxlmphas8n09luvn
-m/44'/145'/0'/0/2: bchtest:qqdq6axdf7qwapktug058m0zs37yekea6yc0g0e9la
-m/44'/145'/0'/0/3: bchtest:qq4ydauttvhh2ewpx89ks0ffd2468z34gqzelwfwp4
-m/44'/145'/0'/0/4: bchtest:qpkuwa7y9lgm0xrvq4rajprv5x99ddwyr5sf37var4
-m/44'/145'/0'/0/5: bchtest:qpy0tns3nkdtpp3vwlu5srretrgz77gpgqzt4r7r95
-m/44'/145'/0'/0/6: bchtest:qp54le5cvdwtueerghnkcxc3jpvwfehkyc9a9w5ktv
-m/44'/145'/0'/0/7: bchtest:qplf8np56jk8702v7h7x8sce97my3xmz4yn6uf02fa
-m/44'/145'/0'/0/8: bchtest:qq93fp5cvzqlsyc4u70mqmwhjx2h8axslguppdcg09
-m/44'/145'/0'/0/9: bchtest:qplknepq5w465wl9dhhvtelzld4kyhv2aqvm3pvsg3
+m/44'/145'/0'/0/0: bchtest:qrcyfng2qqm5nz98xzxlnztt9aguhf3twqq5l8ar5j
+m/44'/145'/0'/0/1: bchtest:qzheqj7ulwa2rdzr4h08zclrt26ehwl7qsg7gk486t
+m/44'/145'/0'/0/2: bchtest:qpqz6pgql3eaa7ftz6jp99zs4kztfcramy5zx9uqmm
+m/44'/145'/0'/0/3: bchtest:qp4t0x7asjqlxq6p659rrgsqfjeszlzh6yqw734z0k
+m/44'/145'/0'/0/4: bchtest:qpz9h29d66yxrdsnqptkeu68vymg6jywusvfjuq5y6
+m/44'/145'/0'/0/5: bchtest:qrn6njuwp4589nn7hkwpqtelxsyduc8qtulrf639a7
+m/44'/145'/0'/0/6: bchtest:qqq5qcqqzwhyl8cc92m86huz7ywc2ndvzu9wxhx695
+m/44'/145'/0'/0/7: bchtest:qptrn3fe73wjch4wf85fkx6pzkjn39tqts79hqr6pv
+m/44'/145'/0'/0/8: bchtest:qze6aj37gnk4tkczaz4t3tw32tqyfe8qqqvqsah3n4
+m/44'/145'/0'/0/9: bchtest:qr53998hsuywh2wf9wusj6j2mhp65p5a45jtmql593
 
 
 
