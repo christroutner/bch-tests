@@ -13,7 +13,7 @@ let BITBOX = new BITBOXCli({ restURL: "https://trest.bitcoin.com/v1/" });
 const lib = require('../../token-liquidity/lib/util.js');
 
 const SEND_MNEMONIC = `pact whisper custom vintage busy dolphin lumber pretty bottom motion alcohol innocent affair view bulb wheel rude load someone crazy hire trim surprise wing`;
-const SEND_ADDR = `bchtest:qr7t0hkwc3xnfnakfngh23nxkmg9vwvcfyukf70cdz`;
+const SEND_ADDR = `bchtest:qzgjlerm2sfgpg562w2t6vm02tvdf3vpjvcea7nvrx`;
 
 
 //const SEND_MNEMONIC = `empty rail board left bonus dinner laundry fetch tortoise shell pyramid awesome alley much float ugly essence asthma aerobic tourist notice mixture anxiety chaos`;
@@ -103,74 +103,7 @@ function changeAddrFromMnemonic(mnemonic) {
   let account = BITBOX.HDNode.derivePath(masterHDNode, "m/44'/145'/0'");
 
   // derive the first external change address HDNode which is going to spend utxo
-  let change = BITBOX.HDNode.derivePath(account, "0/1");
+  let change = BITBOX.HDNode.derivePath(account, "0/0");
 
   return change;
 }
-
-/*
-let hex;
-
-BITBOX.Address.utxo(cashAddress).then(
-  result => {
-    if (!result[0]) {
-      return;
-    }
-
-    // instance of transaction builder
-    let transactionBuilder = new BITBOX.TransactionBuilder("bitcoincash");
-    // original amount of satoshis in vin
-    let originalAmount = result[0].satoshis;
-
-    // index of vout
-    let vout = result[0].vout;
-
-    // txid of vout
-    let txid = result[0].txid;
-
-    // add input with txid and index of vout
-    transactionBuilder.addInput(txid, vout);
-
-    // get byte count to calculate fee. paying 1 sat/byte
-    let byteCount = BITBOX.BitcoinCash.getByteCount({ P2PKH: 1 }, { P2PKH: 1 });
-    // 192
-    // amount to send to receiver. It's the original amount - 1 sat/byte for tx size
-    let sendAmount = originalAmount - byteCount;
-
-    // add output w/ address and amount to send
-    transactionBuilder.addOutput(cashAddress, sendAmount);
-
-    // keypair
-    let keyPair = BITBOX.HDNode.toKeyPair(change);
-
-    // sign w/ HDNode
-    let redeemScript;
-    transactionBuilder.sign(
-      0,
-      keyPair,
-      redeemScript,
-      transactionBuilder.hashTypes.SIGHASH_ALL,
-      originalAmount
-    );
-
-    // build tx
-    let tx = transactionBuilder.build();
-    // output rawhex
-    let hex = tx.toHex();
-    console.log(`Transaction raw hex: ${hex}`);
-
-    // sendRawTransaction to running BCH node
-    BITBOX.RawTransactions.sendRawTransaction(hex).then(
-      result => {
-        console.log(`Transaction ID: ${result}`);
-      },
-      err => {
-        console.log(err);
-      }
-    );
-  },
-  err => {
-    console.log(err);
-  }
-);
-*/
