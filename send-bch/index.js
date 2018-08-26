@@ -63,8 +63,8 @@ async function sendBch() {
   let remainder = originalAmount - satoshisToSend - txFee;
 
   // add output w/ address and amount to send
-  transactionBuilder.addOutput(RECV_ADDR_LEGACY, satoshisToSend);
-  transactionBuilder.addOutput(SEND_ADDR_LEGACY, remainder);
+  transactionBuilder.addOutput(RECV_ADDR, satoshisToSend);
+  transactionBuilder.addOutput(SEND_ADDR, remainder);
   //transactionBuilder.addOutput(RECV_ADDR_LEGACY, remainder);
 
   // Generate a change address from a Mnemonic of a private key.
