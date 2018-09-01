@@ -1,0 +1,20 @@
+{
+  "name": "transaction-details",
+  "version": "1.0.0",
+  "description": "Get details on a TX",
+  "author": "Chris Troutner",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "ls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christroutner/bch-tests.git"
+  },
+  "bugs": {
+    "url": "https://github.com/christroutner/bch-tests/issues"
+  },
+  "homepage": "https://github.com/christroutner/bch-tests#readme"
+}
